@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Juegos en Línea</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tienda de Juegos en Línea</h1>
+    </header>
+    <main>
+        <section id="upload-game">
+            <h2>Subir Nuevo Juego</h2>
+            <form id="game-form">
+                <label for="game-name">Nombre del Juego:</label>
+                <input type="text" id="game-name" placeholder="Escribe el nombre del juego" required>
+
+                <label for="game-price">Precio del Juego:</label>
+                <input type="number" id="game-price" placeholder="Escribe el precio" required>
+
+                <label for="game-image">Subir Imagen:</label>
+                <input type="file" id="game-image" accept="image/*" required>
+
+                <button type="submit">Agregar Juego</button>
+            </form>
+        </section>
+        <section id="game-list">
+            <h2>Lista de Juegos</h2>
+            <div id="games-container"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Tienda de Juegos en Línea</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
